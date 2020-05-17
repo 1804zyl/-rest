@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>疫情大事件</title>
+    <style>
+		<!--
+		body{width: 1200px;margin: 0 auto;}
+		*{list-style: none;margin:0;padding:0;}
+		a:link {color:lavender;text-decoration: none;}/*点击前的状态*/
+		a:hover{color:cornflowerblue;}/*鼠标移动端链接时候的状态*/
+		a:visited{color: aliceblue;}/*鼠标点击后的状态*/
+		.top{position: fixed;color:darkgrey;padding-left: 30px;width:1170px;
+			height: 40px;background-color:#272424;}/*导航栏属性*/
+		.top li{line-height: 40px;width: 188px;float:left;}/*导航栏属性*/
+		.top ul li ul li{background-color:#272424;border-top: 1px solid #fff;text-align: center;}
+		.top ul li{position: relative;}
+		.TitleLink{ font-family: "微软雅黑";}/*导航栏字体*/
+		.top form{line-height: 40px;}
+		.top ul li ul{position: absolute;left:-60px;}/*二级菜单设置样式结束*/
+		.top ul li ul{display: none;}/*二级菜单的显示和隐藏开始*/
+		.top ul li:hover ul{display: block;}/*二级菜单的显示和隐藏结束*/
+		.container-r{width:30%;border-width: 2px 2px 2px 2px;border-style: solid;
+			margin-top:20px;height:150px;margin-left: 150px;}/*右边框架*/
+		.container-l{width:30%;border-width: 2px 2px 2px 2px;border-style: solid;
+			margin-top:-153px;height:150px;margin-left:680px;}/*左边框架*/
+		.level{border-top: 5px solid black;width:80%;margin:auto;}/*水平分割线*/
+		h1{text-align: center;font-size: 15px;}/*标题*/
+		.container{text-indent: 2em;font-family: "楷书";font-size: 15px;}/*内容*/
+		.footertext{font-family:"楷书";text-align: center;font-size: 15px;}/*页脚属性*/
+        .title{text-align: center;font-size: 25px;color: cadetblue;font-family: fantasy;padding-top: 40px;}
+        .imgBox{ border-top: 2px solid cadetblue;width: 60%;height: 600px;margin: 0 auto;}/*网上轮播图片更改利用*/
+        .imgBox img{width: 90%;height:80%;margin: 0 auto;padding-top: 20px;}/*网上轮播图片更改利用*/
+        .img1{display: block;}/*网上轮播图片更改利用*/
+        .img2{display: none}/*网上轮播图片更改利用*/
+        .img3{display: none;}/*网上轮播图片更改利用*/
+		.Allcontent{background-color: hsla(0,4%,95%,0.76);width: auto;margin-left: 0%;margin-right: 0%}/*全局属性*/
+		.remark{font-family:"华文细黑";text-align: center;font-size: 15px; color: hsla(0,0%,49%,1.00)}/*定义提示部分样式*/
+		.search{width: 170px;height: 30px;border-radius: 15px;outline: none;border: 1px solid #ccc;
+			padding-left: 20px;position: absolute;top: 4px;}
+		.parent {position: relative;}
+		-->
+    </style>
+</head>
+	
+<body>
+	<!--开始-->
+	<div class="Allcontent">
+		<script>
+			var index=0;
+			/*改变图片*/
+			function ChangeImg() {index++;var a=document.getElementsByClassName("img-slide");
+								  if(index>=a.length) index=0;
+								  for(var i=0;i<a.length;i++){
+									  a[i].style.display='none';}
+								  a[index].style.display='block';}
+			/*设置定时器，每隔两秒切换一张图片*/
+			setInterval(ChangeImg,2000);
+		</script>
+		<!--此部分为网上利用-->
+		<!--顶部导航栏开始-->
+		<header class="top">
+			<ul>
+				<li><a href="bbs/land.html" title="前往登陆页面" class="TitleLink">登陆</a></li>
+				<li><a href="index.html" class="TitleLink">首页</a></li>
+				<li><a href="bbs/domestic.html" class="TitleLink">国内大事件</a></li>
+				<li><a href="bbs/Assistance.html" class="TitleLink">援助湖北情况</a></li>
+				<li><a href="#" class="TitleLink">时间线总览</a>
+					<ul>
+						<li><a href="bbs/Chinadata.html" class="TitleLink">中国</a></li>
+						<li><a href="bbs/Koreandata.html" class="TitleLink">韩国</a></li>
+						<li><a href="bbs/Japandata.html" class="TitleLink">日本</a></li>
+						<li><a href="bbs/USdata.html" class="TitleLink">美国</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!--搜索框-->
+			<form class="parent">
+				<input type="text" class="search" placeholder="搜索">
+			</form>
+		</header>
+		<!--顶部导航栏结束-->
+		<!--轮播图片开始-->
+		<p class="title"><a href="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_pc_3"  target="nk"
+							style="color: cadetblue">疫情实时直击</a></p>
+		<p class="remark">&#91;点击查看数据&#93;</p>
+		<div class="imgBox">
+			<img class="img-slide img1" src="img/201818340435-zhouquan-201818340431-yuminghao-201818340416-luojiayan-0601.jpg" alt="图1">
+			<img class="img-slide img2" src="img/201818340435-zhouquan-201818340431-yuminghao-201818340416-luojiayan-0602.jpg" alt="图2">
+			<img class="img-slide img3" src="img/201818340435-zhouquan-201818340431-yuminghao-201818340416-luojiayan-0603.jpg" alt="图3">
+			<img class="img-slide img3" src="img/201818340435-zhouquan-201818340431-yuminghao-201818340416-luojiayan-0604.jpg" alt="图4">
+			<img class="img-slide img3" src="img/201818340435-zhouquan-201818340431-yuminghao-201818340416-luojiayan-0605.jpg" alt="图5">
+			<img class="img-slide img3" src="img/201818340435-zhouquan-201818340431-yuminghao-201818340416-luojiayan-0606.jpg" alt="图6">
+			<img class="img-slide img3" src="img/201818340435-zhouquan-201818340431-yuminghao-201818340416-luojiayan-0607.png" alt="图7">
+		</div>
+		<!--轮播图片结束-->
+		<!--下方内容开始-->
+		<hr class="level">
+		<div class="container-r">
+			<h1>中国防疫形势持续向好 全面收官尚待时日</h1>
+			<p class="container">根据官方数据，3月17日，湖北新增疑似病例0例，现有疑似病例0例，实现疑似病例的“清零”！</p>
+			<p class="container">18日上午，这一消息迅速登上热搜。作为中国疫情防控的决战决胜之地，武汉以及湖北全省日渐向好的防疫态势，让人进一步看到中国战疫全面胜利......</p>
+			<span><a href="https://baijiahao.baidu.com/s?id=1661503912050359759&wfr=spider&for=pc" target="_blank"  style="font-family: 微软雅黑;font-size: 13px;color: red;">&#91;点击阅读全文&#93;</a></span>
+		</div>
+		<div class="container-l">
+			<h1>科技部：中国与全球140个国家地区交流防疫经验 药物研发成果被部分国家采纳</h1>
+			<p class="container">【环球网报道】4月14日15时，国务院联防联控机制召开新闻发布会，介绍新冠肺炎药物研发、疫苗研制等科研攻关进展情况。</p>
+			<p class="container">会上，科技部生物中心副主任孙燕荣......</p>
+			<span><a href="https://baijiahao.baidu.com/s?id=1663935251410715173&wfr=spider&for=pc" target="_blank"   style="font-family: 微软雅黑;font-size: 13px;color: red;">&#91;点击阅读全文&#93;</a></span>
+		</div>
+		<!--下方内容结束-->
+		<br><br><br><br>
+		<!--页脚开始-->
+		<hr>
+		<footer class="footertext">
+			<p>以上图片文字来源网络，如有侵权，请联系作者删除</p>
+			<p>邮箱地址：<a href="mailto:275798488@qq.com" style="color: black">275798488@qq.com</a></p>
+		</footer>
+		<!--页脚结束-->
+	</div>
+	<!--结束-->
+</body>
+
+</html>
