@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{width: 1200px;margin: 0 auto;}
+			
+*{list-style: none;margin:0;padding:0;}/*全局属性*/
+
+a:link {color:lavender;text-decoration: none;}/*点击前的状态*/
+
+a:hover{color:cornflowerblue;}/*鼠标移动端链接时候的状态*/
+
+a:visited{color: aliceblue;}/*鼠标点击后的状态*/
+
+a:active{color:lavender;}
+
+.top{position: fixed;color:darkgrey;width:1200px;height: 40px;			
+	background-color:#272424;text-align: center;z-index:1;}/*导航栏属性*/
+			
+span{font-size: 20px;color:white;line-height: 40px;}
+
+.login{position:absolute;border-radius: 7px;
+	top:50%;left:50%;margin: -150px 0 0 -150px;width: 300px;height: 300px;}/*登陆框属性*/
+	
+.login h1{color:cornflowerblue;letter-spacing: 1px;text-align: center;}
+
+h1{font-size: 2em;margin: 0.67em 0;}/*标题属性*/
+
+input{width: 278px; height: 18px;margin-bottom: 10px;outline:none;padding: 10px;font-size: 13px;
+	color: #fff;text-shadow:1px 1px 1px;border-top: 1px solid #312E3D;border-left: 1px solid #312E3D;
+	border-right: 1px solid #312E3D;border-bottom: 1px solid #56536A;border-radius: 7px;
+	background-color: #2D2D3F;}/*输入栏属性*/
+
+.but{width: 300px;min-height: 20px;display: block;background-color: #4a77d4;
+	border: 1px solid #3762bc;color:#fff;padding: 9px 14px;font-size: 15px;line-height: normal;
+	border-radius: 5px;margin: 0;}
+
+.Allcontent{background-color: hsla(0,4%,95%,0.76);width: 1200px;height:750px; margin-left: 0%;margin-right: 0%}
+			
+.footertext{font-family:楷书;text-align: center;font-size: 15px;}/*页脚属性*/

@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*老师，我这页的代码在谷歌网页上显示和火狐显示不一样，我也不知知道原因。*/
+			
+*{list-style: none;margin:0;padding:0;}
+			
+body{width: 1200px;margin: 0 auto;}
+			
+a:link {color:lavender;text-decoration: none;}/*点击前的状态*/
+
+a:hover{color:cornflowerblue;}/*鼠标移动端链接时候的状态*/
+
+a:visited{color: aliceblue;}/*鼠标点击后的状态*/
+
+a:active{color:lavender;}
+
+.top{position: fixed;color:darkgrey;padding-left: 30px;width:1170px;
+	height: 40px;background-color:#272424;}/*导航栏属性*/
+	
+.top li{line-height: 40px;width: 188px;float:left;}/*导航栏属性*/
+
+.top ul li ul li{background-color:#272424;border-top: 1px solid #fff;text-align: center;}
+
+.top ul li{position: relative;}
+
+.top form{line-height: 40px;}
+
+.top ul li ul{position: absolute;left:-60px;}/*二级菜单设置样式结束*/
+
+.top ul li ul{display: none;}/*二级菜单的显示和隐藏开始*/
+
+.top ul li:hover ul{display: block;}/*二级菜单的显示和隐藏结束*/
+
+.TitleLink{ font-family: "微软雅黑";}/*导航栏字体*/
+
+p{text-indent: 2em;font-family: "楷书";font-size: 15px;}/*新闻内容属性*/
+
+span{color: red;font-size:13px;font-family: "楷书";padding-left: 95px;}/*链接属性*/
+
+h1{font-size: 17px;text-align: center;font-family: "楷书";}/*新闻题目属性*/
+
+.hr-l{padding-left:230px;border-width: 0px 10px 10px 0px;height: 100px;width: 0px; 
+	border-color:black;}/*朝左线条属性*/
+	
+.hr-r{float:right;margin-left:0px;padding-right:236.4px;border-width:10px 0px 0px 10px;height: 100px;
+	border-color:black;}/*朝右线条属性*/
+	
+.section-rl{border-style: solid;border-width: 2px 2px 2px 2px;height: 150px}/*左右内容属性边框*/
+
+.contain-n{width: 20%;height: 200px;margin: auto;}/*顶部中间内容属性*/
+
+.contain-l{border-width: 2px 2px 2px 2px;width: 20%;float:left;margin-left:50px;}/*左边内容属性*/
+
+.contain-r{width:20%;border-width: 2px 2px 2px 2px;float:right;margin-right:50px;}/*右边内容属性*/
+
+.contain-h{width:50%;margin:0 auto;}/*中间线条属性*/
+
+.contain{background-color: hsla(0,4%,95%,0.76);width:80%;margin:0 auto;}/*整体属性*/
+
+.footertext{font-family:"楷书";text-align: center;font-size: 15px;}/*页脚属性*/
+
+.search{width: 170px;height: 30px;border-radius: 15px;outline: none;border: 1px solid #ccc;
+		padding-left: 20px;position: absolute;top: 4px;}
+	
+.parent {position: relative;}
+
+.Allcontent{background-color: hsla(0,4%,95%,0.76);width: auto;margin-left: 0%;margin-right: 0%}/*全局属性*/
