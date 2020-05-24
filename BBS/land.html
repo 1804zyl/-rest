@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>登陆界面</title>
+		<link rel="stylesheet" href="../css/land.css">
+	</head>
+
+	<body>
+		<div>
+			<div class="Allcontent">
+				<!--顶部开始-->
+				<header class="top">
+					<a href="../index.html" title="返回首页" style="float:left;font-size:30px;">&laquo;</a>
+					<span>疫情大事件</span>
+				</header>
+				<!--登录框开始-->
+				<div class="login">  
+					<h1>用户登录</h1>  
+					<form method="get">  
+						<input type="text" required="required" placeholder="用户名" name="u"
+							   onkeyup="value=value.replace(/[^\w\.\/]/ig,'')">
+						<input type="password" required="required" placeholder="密码" name="p">  
+						<button class="but" type="submit">登录</button>  
+					</form>  
+				</div>
+			</div>
+			<!--页脚开始-->
+			<hr>
+			<footer class="footertext">
+				<p>以上图片文字来源网络，如有侵权，请联系作者删除</p>
+				<p>邮箱地址：<a href="mailto:275798488@qq.com" style="color: black">275798488@qq.com</a></p>
+			</footer>
+			<!--页脚结束-->
+		</div>
+		<!--结束-->
+	</body>
+</html>
