@@ -34,7 +34,7 @@ a:active{color:lavender;}
 
 .TitleLink{ font-family: "微软雅黑";}/*导航栏字体*/
 
-p{text-indent: 2em;font-family: "楷书";font-size: 15px;}/*新闻内容属性*/
+p{text-indent: 2em;font-family: "楷书";font-size: 15px;cursor:default;}/*新闻内容属性*/
 
 span{color: red;font-size:13px;font-family: "楷书";padding-left: 95px;}/*链接属性*/
 
