@@ -40,7 +40,7 @@ a:active{color:lavender;}
 		
 .level{border-top: 5px solid black;width:80%;margin:auto;}/*水平分割线*/
 		
-h1{text-align: center;font-size: 15px;}/*标题*/
+h1{text-align: center;font-size: 15px;cursor:default;}/*标题*/
 		
 .container{text-indent: 2em;font-family: "楷书";font-size: 15px;}/*内容*/
 		
